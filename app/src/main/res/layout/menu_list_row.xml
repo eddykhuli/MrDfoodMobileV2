@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:id="@+id/tvProductName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:padding="2dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@+id/tvProductName"
+        android:gravity="left"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tvPrice"
+        android:layout_below="@+id/tvPrice"
+        android:layout_marginEnd="11dp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/tvDescription">
+
+    <ImageButton
+        android:id="@+id/ib_addnew"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ib_remove"
+        android:layout_alignEnd="@+id/tvDescription"
+        android:layout_gravity="bottom"
+        android:adjustViewBounds="true"
+        android:background="#00ffffff"
+        android:cropToPadding="false"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_plus"
+        />
+
+    <EditText
+        android:id="@+id/tvQuantity"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/tvDescription"
+        android:layout_toEndOf="@+id/tvDescription"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:text="0" />
+
+
+    <ImageButton
+        android:id="@+id/ib_remove"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDescription"
+        android:layout_gravity="center"
+        android:layout_toEndOf="@+id/tvDescription"
+        android:background="#00ffffff"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_minus2"
+        />
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/tvItemTot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tvDescription"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="51dp"
+        android:layout_marginEnd="45dp"
+        android:text="" />
+</RelativeLayout>

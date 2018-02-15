@@ -1,0 +1,46 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="lagecy.live.desh.com.mrdfoodmobilev2.exampleActivity">
+
+
+    <!--<item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />-->
+
+    <item
+        android:id="@+id/test"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        android:visible="true"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/viewprofile"
+        android:orderInCategory="100"
+        android:title="Show profile"
+        android:visible="true"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/viewOrders"
+        android:orderInCategory="100"
+        android:title="View Orders"
+        android:visible="true"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/faqs"
+        android:orderInCategory="100"
+        android:title="FAQ's"
+        android:visible="true"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="100"
+        android:title="Logout"
+        android:visible="true"
+        app:showAsAction="never" />
+
+
+
+</menu>
