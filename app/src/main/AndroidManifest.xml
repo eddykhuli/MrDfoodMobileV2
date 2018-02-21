@@ -53,24 +53,25 @@
         <activity
             android:name=".CardActivity"
             android:label="@string/title_activity_card"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".CashActivity"
             android:label="@string/title_activity_cash"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".WelcomeActivity"
             android:label="@string/title_activity_welcome"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".CardReviewActivity"
             android:label="@string/title_activity_card_review"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ProfileActivity" />
         <activity
             android:name=".OrdersActivity"
-            android:label="@string/title_activity_orders"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+            android:label="My Orders"
+
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
